@@ -69,7 +69,6 @@ fileprivate extension ThirdViewController {
         desVC.nameMovie = movie.title
         desVC.ratingMovie = String(movie.vote_average)
         desVC.backdropMovieComp = movie.backdrop_path!
-        //desVC.posterMovieComplateUrl = movie.poster_path!
         self.navigationController?.pushViewController(desVC, animated: true)
     }
     
@@ -98,8 +97,7 @@ extension ThirdViewController : UICollectionViewDelegateFlowLayout, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //currentMovie = self.movies[indexPath.row]
-        //navigateToDetails(movie: currentMovie!)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

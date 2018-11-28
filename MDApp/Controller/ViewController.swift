@@ -66,17 +66,6 @@ fileprivate extension ViewController {
     
     //MARK: Navigation
     
-    /*func navigateToDetails(movie: Movie){
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let desVC = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        desVC.idMovie = movie.id
-        desVC.nameMovie = movie.title
-        desVC.ratingMovie = String(movie.vote_average)
-        desVC.backdropMovieComp = movie.backdrop_path!
-        //desVC.posterMovieComplateUrl = movie.poster_path!
-        self.navigationController?.pushViewController(desVC, animated: true)
-    }*/
-    
     func passDataToDetail(_ detail: DetailViewController, with movie : Movie) {
         detail.idMovie = movie.id
         detail.nameMovie = movie.title
@@ -102,8 +91,6 @@ extension ViewController : UICollectionViewDelegateFlowLayout, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //currentMovie = self.movies[indexPath.row]
-        //navigateToDetails(movie: currentMovie!)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
